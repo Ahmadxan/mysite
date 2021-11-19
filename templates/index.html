@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="eng">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Mobile Metas -->
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Ahmadxan</title>
+
+    <!-- slider stylesheet -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+
+    <!-- fonts style -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <!-- responsive style -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-11 offset-md-1 px-0">
+                    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                        <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                        >
+                            <div
+                                    class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+                            >
+                                <a class="navbar-brand" href="{% url 'home-page' %}">
+                                    <img src="{% static 'images/logo.png' %}" style="height: 60px; width: 150px;"
+                                         alt="">
+                                </a>
+                                <ul class="navbar-nav  ">
+                                    <li class="nav-item active">
+                                        <a class="nav-link pl-0" href="index.html"
+                                        >Home <span class="sr-only">(current)</span></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'about-page' %}"> About </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'work-page' %}">MyWork </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'blog-page' %}"> Blog </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <div class="slider_section">
+        <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-1">
+                                <div class="detail-box">
+                                    <div class="heading_box">
+                                        <h2>i Am Ahmad My <span>Creative</span></h2>
+                                        <h1>
+                                            Portfolio
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <a href="/static/Ahmad%20xushvaqtov.pdf">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 px-0">
+                                <div class="img-box">
+                                    <img src="{% static 'images/slider.png' %}" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end slider section -->
+</div>
+<!-- end hero area -->
+
+<!-- design section -->
+
+<section class="design_section layout_padding-top">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Technology
+            </h2>
+        </div>
+        <div class="design_container layout_padding2">
+            <div class="box b-1">
+                <h5>
+                    Html <br/>
+                    Css
+                </h5>
+            </div>
+            <div class="box b-2">
+                <h5>
+                    Python<br/>
+                    Django
+                </h5>
+            </div>
+            <div class="box b-1">
+                <h5>
+                    Git <br/>
+                    GitHub
+                </h5>
+            </div>
+            <div class="box b-2">
+                <h5>
+                    Rest API <br/>
+                    Postgresql
+                </h5>
+            </div>
+            <div class="box b-1">
+                <h5>
+                    Bootstrap <br/>
+                    Postman
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end design section   -->
+<div>
+    <hr class="section_hr"/>
+</div>
+<!-- about section -->
+
+<section class="about_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                About
+            </h2>
+        </div>
+        <div class="box layout_padding2-top layout_padding-bottom">
+            <div class="detail-box">
+                <p>
+                    Hello! I am Ahmad Khushvaqtov.
+                    I am very interested in the field of web programming and I am engaged in this work.
+                    I didn’t know anything when I got into this field.
+                    Because of my interests and aspirations, I gained a lot of knowledge in a short period of time and
+                    am still researching.
+                    My future dream is to become a leading specialist in my field and a person who will benefit to our
+                    country !!!
+                </p>
+            </div>
+            <div class="img-box">
+                <img src="{% static 'images/bg-1.jpg' %}" style="width: 853px" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="btn-box">
+        <a href="/static/Ahmad%20xushvaqtov.pdf">
+            Read More
+        </a>
+    </div>
+</section>
+
+<!-- end about section -->
+
+<!-- project section -->
+
+<section class="project_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Our Projects
+            </h2>
+        </div>
+        <div class="project_container layout_padding2-top">
+            <div class="box">
+                <a href="http://ahmadxan.pythonanywhere.com/"><img src="{% static 'images/p-0.jpg' %}" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end project section -->
+
+<!-- expand section -->
+
+<section class="expand_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="{% static 'images/frontend.PNG' %}" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <h2>
+                        Frontend:
+                    </h2>
+                    <p>
+                        While the term may sound a little technical, website front ends are really an everyday encounter for almost all of us. If you’ve opened an app to check the weather, or scrolled through today’s headlines on a website, you’ve interacted with a front end.
+Put simply, the front end is a combination of two different elements: the graphic design (the look) and the user interface (the feel). Each of these is created independently, with most of the technical work going into the user interface using web languages like HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="expand_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <h2>
+                        Backend:
+                    </h2>
+                    <p>
+                        In the computer world, the "backend" refers to any part of a website or software program that users do not see. It contrasts with the frontend, which refers to a program's or website's user interface. In programming terminology, the backend is the "data access layer," while the frontend is the "presentation layer."
+
+Most modern websites are dynamic, meaning webpage content is generated on-the-fly. A dynamic page contains one or more scripts that run on the web server each time the page is accessed. These scripts generate the content of the page, which is sent to the user's web browser. Everything that happens before the page is displayed in a web browser is part of the backend.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="{% static 'images/backend.PNG' %}" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end expand section -->
+<div>
+    <hr class="section_hr"/>
+</div>
+<!-- blog section -->
+<section class="blog_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                See Our Blog
+            </h2>
+        </div>
+        <div class="row">
+            {% for article in articles %}
+
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/media/{{ article.image }}" style="height: 200px;" alt=""/>
+                        </div>
+                        <div class="detail-box">
+                            <h4>
+                                {{ article.title }}
+                            </h4>
+                            <p>
+                                {{ article.summery }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- end blog section -->
+
+<!-- contact section -->
+
+<section class="contact_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Contact Us
+            </h2>
+        </div>
+        <div class="">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-9 mx-auto">
+                        <div class="contact-form">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <div>
+                                    <input type="text" name="name" placeholder="Full Name "/>
+                                </div>
+                                <div>
+                                    <input type="text" name="tell" placeholder="Phone Number"/>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" placeholder="Email Address"/>
+                                </div>
+                                <div>
+                                    <input
+                                            type="text"
+                                            name="message"
+                                            placeholder="Message"
+                                            class="input_message"
+                                    />
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn_on-hover">
+                                        Send
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end contact section -->
+
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+        <div class="social_container">
+            <h2>
+                Follow Us
+            </h2>
+            <div class="social_box">
+                <a href="">
+                    <img src="{% static 'images/fb.png' %}" alt=""/>
+                </a>
+                <a href="">
+                    <img src="{% static 'images/twitter.png' %}" alt=""/>
+                </a>
+                <a href="">
+                    <img src="{% static 'images/linkedin.png' %}" alt=""/>
+                </a>
+                <a href="">
+                    <img src="{% static 'images/youtube.png' %}" alt=""/>
+                </a>
+                <a href="">
+                    <img src="{% static 'images/telephone-white.png' %}" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end info_section -->
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+    <div class="container">
+        <p>
+            &copy; 2020 All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </div>
+</section>
+<!-- footer section -->
+
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</body>
+</html>
